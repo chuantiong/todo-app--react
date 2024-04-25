@@ -1,0 +1,40 @@
+@import 'index.scss';
+
+.container {
+    width: 100vw;
+    min-width: 375px;
+    max-width: 540px;
+    padding: 3rem 1.5rem;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    max-width: 500px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: $clr-white;
+    font-size: 1.688rem;
+    letter-spacing: .594rem;
+    text-transform: uppercase;
+}
+
+.theme-btn {
+    cursor: pointer;
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+}

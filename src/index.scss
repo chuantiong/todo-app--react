@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap');
+
+$clr-bg-lm: #F2F2F2;
+$clr-todo-bg-lm: #FFFFFF;
+$clr-todo-outline-lm: #393A4B;
+$clr-todo-placeholder-lm: #9495A5;
+$clr-todo-text-complete-lm: #D1D2DA;
+$clr-todo-text-lm: #C8CBE7;
+$clr-small-text-lm: #5B5E7E;
+
+$clr-bg-dm: #171823;
+$clr-todo-bg-dm: #25273D;
+$clr-todo-outline-dm: #E3E4F1;
+$clr-todo-placeholder-dm: #767992;
+$clr-todo-text-complete-dm: #4D5067;
+$clr-todo-text-dm: #494C6B;
+$clr-small-text-dm: #9495A5;
+
+$clr-blue: #3A7CFD;
+$clr-white: #fff;
+
 *,
 *::before,
 *::after {
@@ -8,11 +29,23 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  place-items: center;
-  font-family: 'Helvetica', sans-serif;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
   height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
   margin: 0;
 }

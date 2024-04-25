@@ -1,11 +1,15 @@
-import './App.scss'
+import './App.scss';
+import Background from './components/Background';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
 
   return (
-    <>
-    </>
+    <div className='container'>
+      <Background />
+      <Header />
+    </div>
   )
 }
 
-export default App
+export default App;
