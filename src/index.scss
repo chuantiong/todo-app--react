@@ -2,21 +2,22 @@
 
 $clr-bg-lm: #F2F2F2;
 $clr-todo-bg-lm: #FFFFFF;
-$clr-todo-outline-lm: #393A4B;
+$clr-todo-outline-lm: #E3E4F1;
 $clr-todo-placeholder-lm: #9495A5;
 $clr-todo-text-complete-lm: #D1D2DA;
-$clr-todo-text-lm: #C8CBE7;
-$clr-small-text-lm: #5B5E7E;
+$clr-todo-text-lm: #494C6B;
+$clr-small-text-lm: #9495A5;
 
 $clr-bg-dm: #171823;
 $clr-todo-bg-dm: #25273D;
-$clr-todo-outline-dm: #E3E4F1;
+$clr-todo-outline-dm: #393A4B;
 $clr-todo-placeholder-dm: #767992;
 $clr-todo-text-complete-dm: #4D5067;
-$clr-todo-text-dm: #494C6B;
-$clr-small-text-dm: #9495A5;
+$clr-todo-text-dm: #C8CBE7;
+$clr-small-text-dm: #5B5E7E;
 
 $clr-blue: #3A7CFD;
+$clr-gradient: linear-gradient(150deg, #55DDFF, #C058F3);
 $clr-white: #fff;
 
 *,
@@ -48,4 +49,18 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+input {
+  font-family: inherit;
+  background: none;
+  caret-color: $clr-blue;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: $clr-todo-placeholder-lm;
 }

@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 
 .title {
@@ -37,4 +38,53 @@
 .theme-icon {
     width: 20px;
     height: 20px;
+}
+
+// Todo
+.todo-wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.todo {
+    background-color: $clr-todo-bg-lm;
+    padding: .875rem 1.25rem;
+    display: flex;
+    align-items: center;
+
+    &__placeholder {
+        color: $clr-todo-text-lm;
+        font-size: .75rem;
+        margin-left: 1rem;
+    }
+}
+
+.checkbox {
+
+    &__unchecked,
+    &__checked {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__unchecked {
+        display: grid;
+        place-items: center;
+        border: 1px solid #E3E4F1;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__checked {
+        display: grid;
+        place-items: center;
+        background: $clr-gradient;
+    }
+
+    &__checked-icon {
+        width: 7.25px;
+    }
+
 }
