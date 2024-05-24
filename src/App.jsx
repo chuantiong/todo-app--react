@@ -1,7 +1,9 @@
 import './App.scss';
 import Background from './components/Background';
 import Header from './components/Header';
-import Todo from './components/Todo';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+import { DataProvider } from './contexts/DataContext';
 
 const App = () => {
 
@@ -9,11 +11,12 @@ const App = () => {
     <div className='container'>
       <Background />
       <Header />
-      <div className="main">
-        <div className="todo-wrapper">
-          <Todo />
+      <DataProvider>
+        <div className="main">
+          <TodoForm />
+          <TodoList />
         </div>
-      </div>
+      </DataProvider>
     </div>
   )
 }

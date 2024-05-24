@@ -64,3 +64,9 @@ input {
 input::placeholder {
   color: $clr-todo-placeholder-lm;
 }
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: 1px solid $clr-todo-outline-lm;
+}

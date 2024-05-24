@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
 import checkIcon from '../assets/images/icon-check.svg';
 
-const Checkbox = () => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    const toggleCheckbox = () => {
-        setIsChecked(prevState => !prevState);
-    };
+const Checkbox = (props) => {
 
     return (
-        <div className="checkbox">
+        <div className="checkbox" onClick={props.onClick}>
             <span
-                className={isChecked ? 'checkbox__checked' : 'checkbox__unchecked'}
-                onClick={toggleCheckbox}
+                className={props.toggleChecked ? 'checkbox__checked' : 'checkbox__unchecked'}
             >
-                {isChecked ?
+                {props.toggleChecked ?
                     <span className="checkbox__checked">
                         <img className="checkbox__checked-icon" src={checkIcon} alt="Check icon" />
                     </span>
